@@ -8,29 +8,40 @@
   <script src="scripts.js"></script>
   <style>
     * {
-      background-color: rgb(255, 153, 102);
+      background-color: rgb(219, 98, 38);
       color: #000000;
     }
     .Labs {
-      border: dotted rgb(45, 23, 243);
-      border-radius: 80%;
-      width: 150px;
-      padding: 50px;
       float: inline-start;
     }
 
     .Homework {
-      border: dotted rgb(19, 177, 224);
-      border-radius: 80%;
-      width: 150px;
-      padding: 50px;
       float: left;
       margin-left: 10px;
       margin-right: 10px;
     }
-    a {color: rgb(202, 0, 0);}
+    
+    nav>div {
+      border: dotted rgb(21, 0, 212);
+      border-radius: 80%;
+      width: 175px;
+      height: 100px;
+      padding: 50px;
+    }
+
+    ul>button {
+      margin-bottom: 5px;
+      background-color: #dd0202;
+    }
+
+    a {
+      color: rgb(224, 223, 223);
+      background-color: #dd0202;
+    }
+    
     a:hover {color: yellow;}
     a:visited {font-style: italic;}
+
   </style>
 </head>
 <body>
@@ -42,17 +53,17 @@
   <nav>
     <!--repeated navigation here, may also move to header-->
     <div class="Labs">
-      <h4>Labs/Projects</h4>
+      <h3>Labs/Projects</h3>
       <ul>
-        <li><a href="https://bgriffin315.github.io/pgmExplanation.html" target="_blank">Chapter 2 Project</a></li>  
-        <li><a href="https://bgriffin315.github.io/programmingQuotes.html" target="_blank">Chapter 3 Project</a></li>
+        <button><a href="https://bgriffin315.github.io/pgmExplanation.html" target="_blank">Chapter 2 Project</a></button>  
+        <button><a href="https://bgriffin315.github.io/programmingQuotes.html" target="_blank">Chapter 3 Project</a></button>
       </ul>
     </div>
     
     <div class="Homework">
-      <h4>Homework</h4>
+      <h3>Homework</h3>
       <ul>
-        <li><a href="https://bgriffin315.github.io/index.html" target="_blank">Chapter 3 Homework</a></li>
+        <button><a href="https://bgriffin315.github.io/index.html" target="_blank">Chapter 3 Homework</a></button>
       </ul>
     </div>
   </nav>
@@ -62,9 +73,9 @@
   </main>
   <footer>
     <!--repeated bottom of page content goes here-->
-    <div>
-      <time datetime="2026-02-11 6:55 PM">Created on February 11th, 2026</time> by Breland Griffin
-    </div>
+      <div>
+        <time datetime="2026-02-11 6:55 PM">Created on February 11th, 2026</time> by Breland Griffin
+      </div>
   </footer>
 </body>
 </html>
