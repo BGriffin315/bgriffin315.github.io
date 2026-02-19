@@ -11,25 +11,27 @@
       background-color: rgb(255, 153, 102);
       color: #000000;
     }
-    blockquote.Homework {
-      border: dotted rgb(102, 204, 255);
+    .Labs {
+      border: dotted rgb(45, 23, 243);
       border-radius: 80%;
-      max-width: fit-content;
-      margin: 10px 50px;
-      padding: 10px;
+      width: 150px;
+      padding: 50px;
+      float: inline-start;
     }
-    blockquote.Labs {
-      border: dotted rgb(102, 204, 255);
+
+    .Homework {
+      border: dotted rgb(19, 177, 224);
       border-radius: 80%;
-      max-width: fit-content;
-      margin: auto;
-      padding: 10px;
-    }
-    div.Projects {
+      width: 150px;
+      padding: 50px;
       float: left;
+      margin-left: 10px;
+      margin-right: 10px;
     }
-    div.HW {
-      float: left;
+    .a {
+      color: rgb(0, 82, 0);
+      a:hover {font-size: 1.3em;}
+      a:visited {font-style: italic}
     }
   </style>
 </head>
@@ -41,36 +43,30 @@
   </header>
   <nav>
     <!--repeated navigation here, may also move to header-->
-     <section>
-      <div class="Projects">
-        <blockquote class="Labs">
-          <h4>Labs/Projects</h4>
-          <ul>
-            <li><a href="https://bgriffin315.github.io/pgmExplanation.html" target="_blank">Chapter 2 Project</a></li>  
-            <li><a href="https://bgriffin315.github.io/programmingQuotes.html" target="_blank">Chapter 3 Project</a></li>
-          </ul>
-        </blockquote>
-      </div>
+    <div class="Labs">
+      <h4>Labs/Projects</h4>
+      <ul>
+        <li><a href="https://bgriffin315.github.io/pgmExplanation.html" target="_blank">Chapter 2 Project</a></li>  
+        <li><a href="https://bgriffin315.github.io/programmingQuotes.html" target="_blank">Chapter 3 Project</a></li>
+      </ul>
+    </div>
     
-      <div class="HW">
-        <blockquote class="Homework">
-          <h4>Homework</h4>
-          <ul>
-            <li><a href="https://bgriffin315.github.io/index.html" target="_blank">Chapter 3 Homework</a></li>
-          </ul>
-        </blockquote>
-      </div>
-    </section>
+    <div class="Homework">
+      <h4>Homework</h4>
+      <ul>
+        <li><a href="https://bgriffin315.github.io/index.html" target="_blank">Chapter 3 Homework</a></li>
+      </ul>
+    </div>
   </nav>
   <main>
     <!--main content goes here-->
-    <div>
-      <p>Main content</p>
-    </div>
+      <body>Main content</body>
   </main>
   <footer>
     <!--repeated bottom of page content goes here-->
-    <time datetime="2026-02-11 6:55 PM">Created on February 11th, 2026</time> by Breland Griffin
+    <div>
+      <time datetime="2026-02-11 6:55 PM">Created on February 11th, 2026</time> by Breland Griffin
+    </div>
   </footer>
 </body>
 </html>
