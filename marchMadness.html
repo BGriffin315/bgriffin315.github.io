@@ -7,18 +7,19 @@
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js"></script>
   <style>
+    * {
+      font-family:'Times New Roman', Times, serif;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 250px);
       margin: 0 auto;
       justify-content: center;
+      border: 2px solid black;
+      width: fit-content;
     }
     .grid>* {
       gap: 3px;
-    }
-    .grid:first-child {
-      border: 2px solid black;
-      border-width: auto;
     }
     .grid>header:first-child {
       font-weight:bold;
