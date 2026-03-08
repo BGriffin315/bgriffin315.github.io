@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+  <style>
+    * {
+      font-family:'Times New Roman', Times, serif;
+    }
+    .grid {
+      display:inline-grid;
+      grid-template-columns: repeat(5, 50%);
+      grid-template-rows: repeat(12, 2em);
+    }
+    .grid>* {
+      padding: 3px;
+      vertical-align:middle;
+      outline: 1px solid blue;
+    }
+    .grid>header:first-child {
+      grid-column: 1 / span 5;
+      font-size:large;
+      color:purple;
+      text-align:center;
+      font-weight:bold;
+      outline:none;
+    }
+    .grid > header:nth-child(n + 2) {
+      grid-column: 1 / span 5;
+      font-size:small;
+      color:black;
+    }
+    .product {
+      grid-column: 1 / span 2;
+      font-weight:bold;
+    }
+    .columnHeader {
+      grid-template-columns: repeat(3, 50%);
+      font-weight:bold;
+    }
+    .productContent {
+      grid-column: 1 / span 2;
+    }
+    .divider {
+      background-color:black;
+      grid-column: 1 / span 5;
+      padding: 10px;
+    }
+    .shipping {
+      grid-column: 1 / span 4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+  <nav>
+    <!--Back to Index Page-->
+    <a href="https://bgriffin315.github.io/" target="_blank">Back to Home</a>
+  </nav>
+  <main>
+    <!--Grid Layout for Customer Orders-->
+    <div class="grid">
+      <header>Customer Order Form</header>
+      <header>Order Number</header>
+      <header>Order Date</header>
+      
+      <span class="product">Product Name</span>
+      <span class="columnHeader">Color</span>
+      <span class="columnHeader">Quantity</span>
+      <span class="columnHeader">Price</span>
+      
+      <span class="productContent"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <span class="productContent"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <span class="productContent"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <span class="productContent"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <span class="divider"></span>
+      
+      <header>Subtotal</header>
+      <header>Tax</header>
+      
+      <span class="shipping">Shipping</span>
+      <span>5.95</span>
+      
+      <header>Total</header>
+    </div>
+  </main>
+  <footer>
+    <!--Not used in this assignment-->
+  </footer>
+</body>
+</html>

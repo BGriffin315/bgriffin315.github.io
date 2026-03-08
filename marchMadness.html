@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>March Madness</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+  <style>
+    .grid {
+      display:inline-grid;
+      grid-template-columns: repeat(3, 250px);
+      border-collapse:collapse;
+      border: 2px solid black;
+      position:relative;
+      justify-content:center;
+    }
+    .grid>* {
+      gap: 3px;
+    }
+    .grid>header:first-child {
+      font-weight:bold;
+      font-size:xx-large;
+      text-align:center;
+      align-self:center;
+      word-wrap:normal;
+    }
+    .calendar {
+      display:inline-grid;
+      grid-template-columns: repeat(7, 25px);
+      grid-template-rows: 40px auto;
+      border: 2px solid black;
+      align-items:center;
+      justify-content:center;
+      padding: 10px;
+    }
+    .calendar>* {
+      text-align:center;
+    }
+    .calendar>header:first-child {
+      grid-column: 1 / span 7;
+      font-weight:bold;
+      text-align:center;
+      align-items:center;
+      font-size: medium;
+    }
+    .calendar>header:nth-child(n+1) {
+      font-weight:bold;
+    }
+    .calendar>span:nth-child(n + 24) {
+      background-color:gold;
+    }
+    .calendar>span:nth-child(n + 41) {
+      background-color:white;
+    }
+    .grid>.song {
+      text-align:center;
+      align-content:center;
+      padding: 10px;
+    }
+    .song>header {
+      font-weight:bold;
+      font-size:large;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+  <nav>
+    <!--Back to home page Navigation-->
+    <a href="https://bgriffin315.github.io/" target="_blank">Back to Home</a>
+  </nav>
+  <main>
+    <!--main content goes here-->
+    <div class="grid">
+      <header>MARCH MADNESS</header>
+
+      <div class="calendar">
+        <header>March</header>
+        <header>Sun</header>
+        <header>Mon</header>
+        <header>Tue</header>
+        <header>Wed</header>
+        <header>Thu</header>
+        <header>Fri</header>
+        <header>Sat</header>
+
+        <span></span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <span>13</span>
+        <span>14</span>
+        <span>15</span>
+        <span>16</span>
+        <span>17</span>
+        <span>18</span>
+        <span>19</span>
+        <span>20</span>
+        <span>21</span>
+        <span>22</span>
+        <span>23</span>
+        <span>24</span>
+        <span>25</span>
+        <span>26</span>
+        <span>27</span>
+        <span>28</span>
+        <span>29</span>
+        <span>30</span>
+        <span>31</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="song">
+        <header>Comets</header>
+        <br>
+        <span>
+          Blaze across the sky, Comets burning bright!
+          Charge to victory now—Comets win the fight!
+        </span>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!--repeated bottom of page content goes here-->
+    Footer area
+  </footer>
+</body>
+</html>

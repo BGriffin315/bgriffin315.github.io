@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Pyramid</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+  <style>
+    * {
+      font-family:'Times New Roman', Times, serif;
+    }
+    table, th, td {
+      border: thin solid;
+      border-collapse:collapse;
+      border-color:black;
+      padding: 10px;
+    }
+    table {
+      margin: 0 auto;
+    }
+    th {
+      background-color:rgba(9, 109, 9, 0.767);
+      color:rgba(255, 255, 255, 0.822);
+      text-align:center;
+      font-size:medium;
+    }
+    td:first-of-type {
+      font-weight:bold;
+    }
+    td>div {
+      font-weight:normal;
+      font-style:italic;
+    }
+    td:nth-child(2), td:last-child {
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <!--Navigate back to home page-->
+      <a href="https://bgriffin315.github.io/" target="_blank">Back to Home</a>
+    </nav>
+  </header>
+  <main>
+    <!--Table of USDA food pyramid items and their serving guidelines-->
+    <section>
+      <table>
+        <caption><h1>USDA Food Pyramid</h1></caption>
+        <thead>
+          <tr><th></th><th colspan="2">Serving Guidelines</th></tr>
+          <tr><th>Food Group</th><th>2005-2010</th><th>2011-present</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Dairy<div>(milk, yogurt, cheese)</div></td><td>2-3</td><td>3-4</td></tr>
+          <tr><td>Meat and Beans<div>(beef, poultry, fish, beans)</div></td><td>2-3</td><td>5-6</td></tr>
+          <tr><td>Fruits</td><td>2-4</td><td>2-4</td></tr>
+          <tr><td>Vegetables</td><td>3-5</td><td>1-2</td></tr>
+          <tr><td>Grains<div>(bread, donuts, pop tarts)</div></td><td>1-2</td><td>3-5</td></tr>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <!--Not used in this assignment-->
+  </footer>
+</body>
+</html>
