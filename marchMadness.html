@@ -10,12 +10,14 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 250px);
-      border: 2px solid black;
       margin: 0 auto;
       justify-content: center;
     }
     .grid>* {
       gap: 3px;
+    }
+    .grid:first-child {
+      border: 2px solid black;
     }
     .grid>header:first-child {
       font-weight:bold;
@@ -30,7 +32,7 @@
       border: 2px solid black;
       align-items:center;
       justify-content:center;
-      padding: 10px;
+      padding: 5px;
     }
     .calendar>* {
       text-align:center;
