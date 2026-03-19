@@ -4,7 +4,7 @@ body>header {
 header>h1 {
   text-align:center;
 }
-nav>div {
+.navGrid {
   display:grid;
   grid-template-columns:auto;
   background-color: green;
@@ -13,7 +13,7 @@ nav>div {
 }
 button {
   display:inline-block;
-  margin:auto;
+  margin: 0 auto;
 }
 main>div {
   background-color: red;
