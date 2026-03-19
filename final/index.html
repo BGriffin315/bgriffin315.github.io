@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Title</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<style>
+  body>header {
+    background-color: skyblue;
+  }
+  header>h1 {
+    text-align:center;
+  }
+  nav>p {
+    background-color: green;
+    padding: 15px;
+  }
+  main>div {
+    background-color: red;
+  }
+  .firstGrid {
+    display:grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "descriptive banner";
+  }  
+  .grid {
+    display:grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 500px);
+    margin: auto;
+    justify-content: center;
+  }
+  .techImage {
+    background-color:violet;
+  }
+  .descriptiveText {
+    background-color:blue;
+    grid-area: descriptive;
+  }
+  .supplementalText {
+    background-color:brown;
+  }
+  .banner {
+    background-color:yellow;
+    grid-area: banner;
+  }
+
+</style>
+<body>
+  <header>
+    <h1>Technology Club</h1>
+  </header>
+  <nav>
+    <p>
+    Navigation
+    </p>
+  </nav>
+  <main>
+    <!--main content goes here-->
+    <article>
+      <section>
+        <div class="firstGrid">
+          <span class="descriptiveText">
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          </span>
+          <span class="banner">
+            <img src="placeholder_800x450.png">
+          </span>
+        </div>
+      </section>
+      <section>
+        <div class="grid">
+          <div class="techImage">
+            <span><img src="placeholder_400x300.png" alt="Placeholder Image"></span>
+          </div>
+          <div class="supplementalText">
+            <header>What is Lorem Ipsum?</header>
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            </span>
+          </div>
+          <div class="techImage">
+            <span><img src="placeholder_400x300.png"></span>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <!--repeated bottom of page content goes here-->
+    Footer area
+  </footer>
+</body>
+</html>
