@@ -7,15 +7,7 @@ header>h1 {
 nav>p {
   background-color: green;
   padding: 15px;
-}
-.navGrid {
-  display:grid;
-  grid-template-columns:auto;
-  margin: 0 auto;
-}
-button {
-  display:inline-block;
-  margin: 0 auto;
+  text-align:center;
 }
 main>div {
   background-color: red;
