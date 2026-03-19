@@ -8,6 +8,10 @@ nav>p {
   background-color: green;
   padding: 15px;
 }
+button {
+  display:inline-block;
+  margin:auto;
+}
 main>div {
   background-color: red;
 }
