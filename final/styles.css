@@ -11,7 +11,6 @@ ul {
   background-color: green;
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
 }
 ul li {
   border-right: 1px solid black;
@@ -48,12 +47,14 @@ main>div {
   background-color:violet;
 }
 .descriptiveText {
-  background-color:rgb(70, 70, 255);
+  background-color:rgb(107, 107, 255);
   grid-area: descriptive;
   padding-right: 10px;
 }
 .supplementalText {
   background-color:brown;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .banner {
   background-color:yellow;
