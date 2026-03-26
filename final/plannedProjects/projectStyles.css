@@ -1,0 +1,68 @@
+body>header {
+  background-color: skyblue;
+}
+header>h1 {
+  text-align:center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  border-right: 1px solid black;
+}
+ul>li:first-child {
+  border-left: 1px solid black;
+}
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: #111111;
+}
+main>div {
+  background-color: red;
+}
+.firstGrid {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "descriptive banner";
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  border-collapse: separate;
+}
+.firstGrid>div {
+  background-color:#ffd18d;
+}  
+.grid {
+  display:grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  border-collapse: separate;
+}
+.techImage {
+  max-width:fit-content;
+}
+.descriptiveText {
+  grid-area: descriptive;
+  margin-right: 10px;
+}
+.supplementalText {
+  background-color:#ffd18d;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.banner {
+  max-width: fit-content;
+  grid-area: banner;
+}
