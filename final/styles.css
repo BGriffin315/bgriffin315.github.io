@@ -11,12 +11,12 @@ ul {
   background-color: green;
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 ul li {
   border-right: 1px solid black;
 }
-ul li:first-child {
+ul>li:first-child {
   border-left: 1px solid black;
 }
 ul li a {
