@@ -42,6 +42,8 @@ main>div {
   grid-template-columns: 2fr 1fr 2fr;
   margin: auto;
   justify-content: center;
+  text-align: center;
+  border-collapse: separate;
 }
 .techImage {
   background-color:violet;
