@@ -36,6 +36,8 @@ main>div {
   grid-template-areas: "descriptive banner";
   margin-bottom: 20px;
   border-collapse: separate;
+  justify-content: center;
+  text-align: center;
 }  
 .grid {
   display:grid;
