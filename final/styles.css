@@ -11,7 +11,7 @@ ul {
   background-color: green;
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 ul li {
   border-right: 1px solid black;
@@ -48,7 +48,7 @@ main>div {
   background-color:violet;
 }
 .descriptiveText {
-  background-color:blue;
+  background-color:rgb(70, 70, 255);
   grid-area: descriptive;
   padding-right: 10px;
 }
