@@ -34,10 +34,10 @@ main>div {
   display:grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "descriptive banner";
-  margin-bottom: 20px;
-  border-collapse: separate;
   justify-content: center;
   text-align: center;
+  margin-bottom: 20px;
+  border-collapse: separate;
 }  
 .grid {
   display:grid;
