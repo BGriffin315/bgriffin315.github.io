@@ -14,7 +14,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: green;
   align-content: center;
 }
 ul li {
@@ -23,6 +22,8 @@ ul li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: green;
+  align-content: center;
 }
 main>div {
   background-color: red;
@@ -31,6 +32,8 @@ main>div {
   display:grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "descriptive banner";
+  padding-bottom: 2em;
+  border-collapse: separate;
 }  
 .grid {
   display:grid;
