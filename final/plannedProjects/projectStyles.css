@@ -52,10 +52,10 @@ main>div {
 }
 .techImage {
   max-width:fit-content;
-  float:right;
 }
 .techImage2 {
   max-width:fit-content;
+  float:right;
 }
 .descriptiveText {
   grid-area: descriptive;
