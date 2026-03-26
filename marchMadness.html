@@ -12,20 +12,23 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 250px);
+      grid-template-columns: 3fr 4fr 3fr;
       margin: 0 auto;
       justify-content: center;
-      border: 2px solid black;
       width: fit-content;
     }
     .grid>* {
       gap: 3px;
     }
-    .grid>header:first-child {
+    .title {
+      border: 2px solid black;
+      vertical-align:middle;
+      align-content:center;
+    }
+    .title>:first-child {
       font-weight:bold;
       font-size:xx-large;
       text-align:center;
-      align-self:center;
       word-wrap:normal;
     }
     .calendar {
@@ -35,25 +38,29 @@
       align-items:center;
       justify-content:center;
       padding: 5px;
+      font-size:medium;
     }
     .calendar>* {
       text-align:center;
     }
-    .calendar>header:first-child {
+    .calendar>h2:first-child {
       grid-column: 1 / span 7;
       font-weight:bold;
       text-align:center;
       align-items:center;
       font-size: medium;
     }
-    .calendar>header:nth-child(n+1) {
+    .calendar>h3:nth-child(n) {
       font-weight:bold;
     }
-    .calendar>span:nth-child(n + 24) {
+    .calendar>span:nth-child(n + 25) {
       background-color:gold;
     }
     .calendar>span:nth-child(n + 41) {
       background-color:white;
+    }
+    .song {
+      border: 2px solid black;
     }
     .grid>.song {
       text-align:center;
@@ -77,17 +84,18 @@
   <main>
     <!--main content goes here-->
     <div class="grid">
-      <header>MARCH MADNESS</header>
-
+      <div class="title">
+        <h1>MARCH MADNESS</h1>
+      </div>
       <div class="calendar">
-        <header>March</header>
-        <header>Sun</header>
-        <header>Mon</header>
-        <header>Tue</header>
-        <header>Wed</header>
-        <header>Thu</header>
-        <header>Fri</header>
-        <header>Sat</header>
+        <h2>March</h2>
+        <h3>Sun</h3>
+        <h3>Mon</h3>
+        <h3>Tue</h3>
+        <h3>Wed</h3>
+        <h3>Thu</h3>
+        <h3>Fri</h3>
+        <h3>Sat</h3>
 
         <span></span>
         <span>1</span>
@@ -125,7 +133,6 @@
         <span></span>
         <span></span>
       </div>
-
       <div class="song">
         <header>Comets</header>
         <br>
