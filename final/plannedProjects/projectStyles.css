@@ -36,7 +36,7 @@ main>div {
   grid-template-areas: "descriptive banner";
   justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin: auto;
   border-collapse: separate;
 }
 .firstGrid>div {
