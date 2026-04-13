@@ -5,6 +5,10 @@
   margin: 0 auto 10px auto;
 }
 
+body {
+  background-color: #f2f6fb;
+}
+
 body > header {
   background-color: #1f3a5f;
 }
@@ -48,16 +52,26 @@ main {
   padding: 20px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .firstGrid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "descriptive banner";
   gap: 20px;
   margin-bottom: 30px;
+  background-color: #eaf1f8;
+  padding: 10px;
 }
 
-.firstGrid > div {
+.firstGrid > div,
+.grid > div {
   background-color: #ffffff;
+  border-radius: 4px;
   padding: 20px;
   border: 1px solid #ccc;
 }
