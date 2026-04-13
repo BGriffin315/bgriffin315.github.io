@@ -134,6 +134,10 @@ footer {
 /* Mobile Compatibility */
 @media (max-width: 768px) {
 
+  .nav-item {
+    border: 4px solid black;
+  }
+
   .firstGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
