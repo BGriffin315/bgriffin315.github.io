@@ -54,7 +54,6 @@ main {
 
 img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -93,6 +92,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  align-items: stretch;
 }
 
 .sectionHeading h3 {
