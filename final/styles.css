@@ -81,6 +81,10 @@ img {
   align-content: center;
 }
 
+.descriptiveText p {
+  text-align: center;
+}
+
 .banner {
   grid-area: banner;
 }
