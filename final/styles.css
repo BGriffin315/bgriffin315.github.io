@@ -78,7 +78,7 @@ img {
 
 .descriptiveText {
   grid-area: descriptive;
-  text-align: center;
+  align-content: center;
   margin: 0;
 }
 
