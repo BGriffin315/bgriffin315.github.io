@@ -13,6 +13,13 @@ body > header {
   background-color: #1f3a5f;
 }
 
+header>a {
+  color:white;
+}
+
+header>a:hover {
+  color: yellow;
+}
 header > h1 {
   text-align: center;
   color: white;
