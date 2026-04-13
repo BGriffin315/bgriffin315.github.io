@@ -134,7 +134,7 @@ footer {
 /* Mobile Compatibility */
 @media (max-width: 768px) {
 
-  .nav-item li {
+  .nav-item>li {
     border: 1px solid black;
   }
 
