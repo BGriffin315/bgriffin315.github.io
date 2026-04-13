@@ -61,7 +61,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "descriptive banner";
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
   margin-bottom: 30px;
   background-color: #eaf1f8;
@@ -78,6 +78,7 @@ img {
 
 .descriptiveText {
   grid-area: descriptive;
+  justify-content: center;
 }
 
 .banner {
