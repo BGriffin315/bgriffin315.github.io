@@ -78,8 +78,6 @@ img {
 
 .descriptiveText {
   grid-area: descriptive;
-  align-content: center;
-  text-align: center;
 }
 
 .banner {
