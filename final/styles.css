@@ -95,8 +95,8 @@ img {
   gap: 20px;
 }
 
-.sectionHeading {
-  align-content:center;
+.sectionHeading h3 {
+  text-align:center;
 }
 
 .techImage,
