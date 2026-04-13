@@ -81,6 +81,10 @@ main {
   gap: 20px;
 }
 
+.sectionHeading {
+  text-align:center;
+}
+
 .techImage,
 .supplementalText {
   background-color: #ffffff;
