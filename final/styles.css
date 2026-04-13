@@ -9,7 +9,7 @@ header > h1 {
   margin: 0;
 }
 
-ul {
+nav>ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -18,11 +18,11 @@ ul {
   justify-content: center;
 }
 
-ul li {
+nav>ul li {
   border-right: 1px solid black;
 }
 
-ul > li:first-child {
+nav>ul > li:first-child {
   border-left: 1px solid black;
 }
 
