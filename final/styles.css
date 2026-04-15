@@ -132,11 +132,27 @@ footer {
 }
 
 /* Mobile Compatibility */
-@media (max-width: 768px) {
 
-  .nav-item>li {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+@media (max-width: 480px) {
+
+  body > header {
+  background-color: #1f5f41;
+  }
+
+  nav>ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f5f41;
+  }
+
+  nav>ul li {
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  ul li a {
+    padding: 12px;
   }
 
   .firstGrid {
@@ -150,12 +166,81 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  ul {
-    flex-direction: column;
-    align-items: center;
+  .logo {
+    width: 60px; /* slightly smaller for phones */
   }
 
-  ul li {
-    border: none;
+  body {
+    font-size: 14px;
+  }
+
+  footer {
+  background-color: #1f5f41;
+  }
+}
+
+/* Tablet Compatibility */
+
+@media (max-width: 768px) {
+
+  body > header {
+  background-color: #f5ba6c;
+  }
+  
+  nav>ul {
+    background: #572020;
+  }
+  
+  .firstGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "descriptive"
+      "banner";
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr; /* tablets get 2 columns */
+  }
+
+  nav>ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f5ba6c;
+  }
+
+  footer {
+  background-color: #f5ba6c;
+  }
+}
+
+/* Large Destkop Compatibility */
+@media (min-width: 1200px) {
+
+  body > header {
+  background-color: #572020;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto; /* centers content */
+  }
+
+  .firstGrid {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px; /* more breathing room */
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  body {
+    font-size: 18px; /* better readability on large screens */
+  }
+
+  footer {
+  background-color: #572020;
   }
 }
