@@ -38,6 +38,7 @@ nav>ul {
 
 nav>ul li {
   border-right: 1px solid black;
+  border-top: 1px solid black;
 }
 
 nav>ul > li:first-child {
