@@ -187,10 +187,6 @@ footer {
   background-color: #f5ba6c;
   }
   
-  nav>ul {
-    background: #572020;
-  }
-  
   .firstGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -220,6 +216,10 @@ footer {
   background-color: #572020;
   }
 
+    nav>ul {
+    background: #572020;
+  }
+  
   main {
     max-width: 1200px;
     margin: 0 auto; /* centers content */
