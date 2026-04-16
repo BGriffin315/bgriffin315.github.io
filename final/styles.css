@@ -136,7 +136,7 @@ footer {
 @media (max-width: 480px) {
 
   body > header {
-  background-color: #1f5f41;
+    background-color: #1f5f41;
   }
 
   nav>ul {
@@ -181,7 +181,7 @@ footer {
 
 /* Tablet Compatibility */
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
 
   body > header {
   background-color: #f5ba6c;
@@ -219,7 +219,7 @@ footer {
     nav>ul {
     background: #572020;
   }
-  
+
   main {
     max-width: 1200px;
     margin: 0 auto; /* centers content */
