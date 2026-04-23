@@ -37,3 +37,7 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+if (now.toLocaleTimeString(hour) > 16) {
+  document.getElementById("upLate").innerText = "Working late huh?";
+}
