@@ -200,6 +200,7 @@ form button{
 /* ✅ Desktop behavior (default) */
 .dropdown:hover .dropdown-content {
   display: block;
+  background: red;
 }
 
 /* JS toggle class */
