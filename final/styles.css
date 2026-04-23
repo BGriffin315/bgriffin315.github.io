@@ -124,13 +124,28 @@ img {
 }
 
 .emailForm {
-  background: white;
-  overflow: hidden;
+  width: 600px;
+  padding:20px;
+  border: green 2px solid;
+  background: red;
+  background-size: cover;
+  background-position: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
+}
+form input{
+  padding: 10px;
+  margin-bottom: 20px;
+}
+form textarea{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form button{
+  padding: 10px;
 }
 
 footer {
