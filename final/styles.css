@@ -123,6 +123,20 @@ img {
   object-fit: cover;
 }
 
+.emailForm {
+  background: white;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #1f5f41;
+}
+
 footer {
   background-color: #1f3a5f;
   color: white;
@@ -172,20 +186,6 @@ footer {
 
   body {
     font-size: 14px;
-  }
-
-  .emailForm {
-    background: white;
-    overflow: hidden;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer {
-  background-color: #1f5f41;
   }
 }
 
