@@ -179,6 +179,11 @@ footer {
     overflow: hidden;
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
   footer {
   background-color: #1f5f41;
   }
