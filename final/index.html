@@ -19,8 +19,24 @@
     <ul class="nav-item">
       <li><a href="/final/index.html">Home</a></li>
       <li><a href="/final/about/">About</a></li>
-      <li><a href="/final/connect/">Connect</a></li>
-      <li><a href="/final/plannedProjects/">Planned Projects</a></li>
+      <li><div class="dropdown">
+              <button onclick="myDropdown()" class="dropbtn"><a href="/final/connect/">Connect</a></button>
+              <div id="dropdown" class="dropdownContent">
+                <a href="/final/connect/contact.html" target="_blank">Contact</a>
+                <a href="/final/connect/join.html" target="_blank">Join</a>
+                <a href="/final/connect/meetings.html" target="_blank">Meetings</a>
+              </div>
+          </div>
+      </li>
+      <li><div class="dropdown">
+              <button onclick="myDropdown()" class="dropbtn"><a href="/final/plannedProjects/">Projects</a></button>
+              <div id="dropdown" class="dropdownContent">
+                <a href="/final/connect/currentProject.html" target="_blank">Current Projects</a>
+                <a href="/final/connect/futureProjects.html" target="_blank">Future Projects</a>
+                <a href="/final/connect/completedProjects.html" target="_blank">Completed Projects</a>
+              </div>
+          </div>
+        </li>
     </ul>
   </nav>
 
