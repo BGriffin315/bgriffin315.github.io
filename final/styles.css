@@ -27,7 +27,7 @@ header > h1 {
   margin: 0;
 }
 
-.clock {
+.clock > p {
   color: white;
   float: right;
 }
