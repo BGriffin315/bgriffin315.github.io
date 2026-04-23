@@ -218,6 +218,14 @@ footer {
     text-align: center;
   }
 
+  .navbar > li > a{
+    background-color: #1f5f41;
+  }
+
+  .dropdown-content a {
+  background-color: #1f5f41;
+  }
+
   ul li a {
     padding: 12px;
   }
@@ -267,7 +275,7 @@ footer {
     background-color: #f5ba6c;
   }
 
-  .navbar {
+  .navbar > li > a{
     background-color: #f5ba6c;
   }
 
@@ -291,7 +299,7 @@ footer {
     background: #632424;
   }
 
-  .navbar {
+  .navbar > li > a{
     background-color: #632424;
   }
 
