@@ -126,10 +126,11 @@ img {
 .emailForm {
   width: 300px;
   padding:20px;
-  border: green 2px solid;
-  background: red;
+  border: black 2px solid;
+  background: #ffffff;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 }
 
 form {
