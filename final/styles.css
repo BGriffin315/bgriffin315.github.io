@@ -162,7 +162,7 @@ form button{
 
 .dropbtn {
   display: inline-block;
-  background-color: #3498DB;
+  background-color: #2c4a73;
   color: white;
   padding: 16px;
   text-decoration: none;
@@ -176,6 +176,10 @@ form button{
   background-color: #f1f1f1;
   min-width: 180px;
   z-index: 9999;
+}
+
+.dropdown-content a {
+  background-color: #2c4a73;
 }
 
 .dropdown:hover .dropdown-content {
@@ -263,6 +267,14 @@ footer {
     background-color: #f5ba6c;
   }
 
+  .navbar {
+    background-color: #f5ba6c;
+  }
+
+  .dropdown-content a {
+  background-color: #f5ba6c;
+  }
+
   footer {
   background-color: #f5ba6c;
   }
@@ -277,6 +289,14 @@ footer {
 
     nav>ul {
     background: #632424;
+  }
+
+  .navbar {
+    background: #632424;
+  }
+
+  .dropdown-content a {
+  background-color: #632424;
   }
 
   main {
