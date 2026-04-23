@@ -1,19 +1,30 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myDropdown() {
-  document.getElementById("dropdown").classList.toggle("show");
+// Only activate click behavior on smaller screens
+function isMobile() {
+  return window.innerWidth <= 768;
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdownContent");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+document.querySelectorAll('.dropbtn').forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    if (isMobile()) {
+      e.preventDefault();
+
+      const dropdown = this.nextElementSibling;
+
+      // Close others
+      document.querySelectorAll('.dropdown-content').forEach(d => {
+        if (d !== dropdown) d.classList.remove('show');
+      });
+
+      dropdown.classList.toggle('show');
     }
+  });
+});
+
+// Close if clicking outside
+document.addEventListener('click', function (e) {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown-content').forEach(d => {
+      d.classList.remove('show');
+    });
   }
-}
+});

@@ -19,27 +19,28 @@
     <ul class="nav-item">
       <li><a href="/final/index.html">Home</a></li>
       <li><a href="/final/about/">About</a></li>
-      <li><div class="dropdown">
-              <button onclick="myDropdown()" class="dropbtn">
-                <a href="/final/connect/">Connect</a>
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div id="dropdown" class="dropdownContent">
-                <a href="/final/connect/contact.html" target="_blank">Contact</a>
-                <a href="/final/connect/join.html" target="_blank">Join</a>
-                <a href="/final/connect/meetings.html" target="_blank">Meetings</a>
-              </div>
-          </div>
+      <li class="dropdown">
+        <a href="/final/connect/" class="dropbtn">
+          Connect <span class="caret">▼</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="/final/connect/contact.html">Contact</a>
+          <a href="/final/connect/join.html">Join</a>
+          <a href="/final/connect/meetings.html">Meetings</a>
+        </div>
       </li>
-      <li><div class="dropdown">
-              <button onclick="myDropdown()" class="dropbtn"><a href="/final/plannedProjects/">Projects</a></button>
-              <div id="dropdown" class="dropdownContent">
-                <a href="/final/connect/currentProject.html" target="_blank">Current Projects</a>
-                <a href="/final/connect/futureProjects.html" target="_blank">Future Projects</a>
-                <a href="/final/connect/completedProjects.html" target="_blank">Completed Projects</a>
-              </div>
-          </div>
-        </li>
+
+      <li class="dropdown">
+        <a href="/final/plannedProjects/" class="dropbtn">
+          Projects <span class="caret">▼</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="/final/connect/currentProject.html">Current Projects</a>
+          <a href="/final/connect/futureProjects.html">Future Projects</a>
+          <a href="/final/connect/completedProjects.html">Completed Projects</a>
+        </div>
+      </li>
+
     </ul>
   </nav>
 
