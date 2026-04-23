@@ -149,62 +149,36 @@ form button{
   padding: 10px;
 }
 
-/* Navbar layout */
 .navbar {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex; /* better than inline-block */
 }
 
 .navbar li {
-  display: inline-block;
   position: relative;
 }
 
-/* Button-style links */
 .dropbtn {
   display: inline-block;
   background-color: #3498DB;
   color: white;
   padding: 16px;
   text-decoration: none;
-  font-size: 16px;
 }
 
-.dropbtn:hover {
-  background-color: #2980B9;
-}
-
-/* Dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 100%;   /* 🔥 important */
+  left: 0;     /* 🔥 important */
   background-color: #f1f1f1;
   min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 9999;
 }
 
-/* Links */
-.dropdown-content a {
-  display: block;
-  padding: 12px 16px;
-  color: black;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* ✅ Desktop behavior (default) */
 .dropdown:hover .dropdown-content {
-  display: block;
-  background: red;
-}
-
-/* JS toggle class */
-.dropdown-content.show {
   display: block;
 }
 
