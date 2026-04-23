@@ -27,6 +27,11 @@ header > h1 {
   margin: 0;
 }
 
+.clock {
+  color: white;
+  float: right;
+}
+
 nav>ul {
   list-style-type: none;
   margin: 0;
