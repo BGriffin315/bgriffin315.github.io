@@ -27,7 +27,12 @@ header > h1 {
   margin: 0;
 }
 
-.clock > p {
+.clock {
+  color: white;
+  float: right;
+}
+
+.upLate {
   color: white;
   float: right;
 }
