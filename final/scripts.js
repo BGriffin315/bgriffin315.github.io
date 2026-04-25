@@ -38,6 +38,11 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-if (now.toLocaleTimeString(hour) > 16) {
+function upLate() {
+  var today = new Date();
+  if (today.toLocaleTimeString(hour) > 16) {
   document.getElementById("upLate").innerText = "Working late huh?";
+  } else {
+    document.getElementById("upLate").innerText = "Good Morning!"
+  }
 }
