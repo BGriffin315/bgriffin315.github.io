@@ -46,3 +46,5 @@ function upLate() {
     document.getElementById("upLate").innerText = "Good Morning!"
   }
 }
+
+upLate();
