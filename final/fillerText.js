@@ -12,10 +12,10 @@ const text = [
 'Build a “Daily Fun Fact About Tech” page that auto-populates interesting facts about computers, the internet, and innovation. The facts could rotate daily or randomly, making the page a quick and engaging stop for students.'
 ];
 
-const result = document.querySelector('.fillerText');
+document.addEventListener("DOMContentLoaded", () => {
+  const fillerText = document.querySelector(".fillerText");
 
-article.addEventListener("load", function(e) {
-  e.preventDefault();
   const random = Math.floor(Math.random() * text.length);
+  
   fillerText.innerHTML = '<p class="filler-text">${text[random]</p>';
 });
