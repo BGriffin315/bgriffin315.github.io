@@ -48,8 +48,28 @@
   <section>
     <div class="descriptiveText">
       <h3>Who Can Join</h3>
-      <p>
-        The Technology Club is open to all students interested in learning about technology. No prior experience is required—just curiosity and willingness to learn.
+      <form>
+        <label for="experience">Select your Experience Level:</label><br>
+
+        <label>
+          <input type="radio" name="experienceLevel" value="None">
+          None
+        </label><br>
+        
+        <label>
+          <input type="radio" name="experienceLevel" value="Beginner">
+          Beginner
+        </label><br>
+
+        <label>
+          <input type="radio" name="experienceLevel" value="Expert">
+          Expert
+        </label><br><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+
+      <p class="joinOutput">
       </p>
     </div>
   </section>
@@ -65,8 +85,6 @@
         <li>Build teamwork and problem-solving skills</li>  
         <li>Prepare for future tech careers</li>
       </ul>
-
-      <input type="date" id="calendar" placeholder="10/31/2026" size="300px" maxlength="8">
     </div>
   </section>
 

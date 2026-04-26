@@ -32,7 +32,7 @@ document.addEventListener('click', function (e) {
 // Clock display
 function updateClock() {
   const now = new Date();
-  document.getElementById("clock").innerText = now.toLocaleTimeString();
+  document.getElementById(".clock").innerText = now.toLocaleTimeString();
 }
 
 setInterval(updateClock, 1000);
@@ -41,10 +41,17 @@ updateClock();
 function upLate() {
   var today = new Date();
   if (today.toLocaleTimeString(hour) > 16) {
-  document.getElementById("upLate").innerText = "Working late huh?";
+  document.getElementById(".upLate").innerHTML = "Working late huh?";
   } else {
-    document.getElementById("upLate").innerText = "Good Morning!"
+    document.getElementById(".upLate").innerHTML = "Good Morning!"
   }
 }
 
 upLate();
+
+const selected = document.querySelector('input[name="experienceLevel"]:checked');
+
+if (selected) {
+  console.log(selected.value);
+  document.getElementById(".joinOutput").innerHTML = "You can join!"
+}
