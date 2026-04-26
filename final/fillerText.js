@@ -14,7 +14,7 @@ const text = [
 
 const result = document.querySelector('.fillerText');
 
-form.addEventListener("load", function(e) {
+article.addEventListener("load", function(e) {
   e.preventDefault();
   const random = Math.floor(Math.random() * text.length);
   fillerText.innerHTML = '<p class="filler-text">${text[random]</p>';
