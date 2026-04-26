@@ -49,9 +49,15 @@ function upLate() {
 
 upLate();
 
-const selected = document.querySelector('input[name="experienceLevel"]:checked');
+document.querySelector('form').addEventListener("submit", function(e) {
+  e.preventDefault();
 
-if (selected) {
-  console.log(selected.value);
-  document.getElementById(".joinOutput").innerHTML = "You can join!"
-}
+  const selected = document.querySelector('input[name="experienceLevel"]:checked');
+  const form = document.querySelector("form");
+
+  if (selected) {
+    form.innerHTML = "<p>You can Join!</p><br>"
+  } else {
+    form.innerHTML = "<p>Select an option!</p><br>"
+  }
+});
