@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const fillerText = document.querySelector(".fillerText");
 
   const random = Math.floor(Math.random() * text.length);
-  
-  fillerText.innerHTML = '<p class="filler-text">${text[random]</p>';
+
+  fillerText.innerHTML = '<p class="filler-text">${text[random]}</p>';
 });
