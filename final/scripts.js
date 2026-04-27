@@ -40,7 +40,9 @@ updateClock();
 
 function upLate() {
   var today = new Date();
-  if (today.toLocaleTimeString(hour) > 16) {
+  var hour = today.getHours();
+
+  if (hour > 16) {
   document.getElementById("upLate").innerHTML = `Working late huh?`;
   } else {
     document.getElementById("upLate").innerHTML = `Good Morning!`;
