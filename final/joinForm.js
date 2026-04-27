@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
       form.innerHTML = `<p>Hello, Dean, have you seen this yet?</p>`
       document.querySelector(".banner").innerHTML = `
         <iframe 
-          width="560" 
-          height="315" 
           src="https://www.youtube.com/embed/b0IWVeqvQGk"
           title="FFXIV Evercold Teaser Trailer"
           frameborder="0"
