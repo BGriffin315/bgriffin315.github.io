@@ -32,7 +32,7 @@ document.addEventListener('click', function (e) {
 // Clock display
 function updateClock() {
   const now = new Date();
-  document.getElementById("clock").innerText = now.toLocaleTimeString();
+  document.getElementById("clock").innerHTML = now.toLocaleTimeString();
 }
 
 setInterval(updateClock, 1000);
