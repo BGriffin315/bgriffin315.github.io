@@ -1,7 +1,3 @@
-const joinMessage = [
-
-]
-
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('form').addEventListener("submit", function(e) {
     console.log("script is running");
@@ -24,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     } else {
       form.innerHTML = "<p>You can join!</p>";
-      document.querySelector(".banner").innerHTML = `<img src="groupWorkingTogether.avif" alt="Group collaborating">`
+      document.querySelector(".banner").innerHTML = `<img src="/final/images/groupWorkingTogether.avif" alt="Group collaborating">`
     }
   })
 });
