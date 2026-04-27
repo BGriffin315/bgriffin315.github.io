@@ -35,9 +35,6 @@ function updateClock() {
   document.getElementById("clock").innerHTML = now.toLocaleTimeString();
 }
 
-setInterval(updateClock, 1000);
-updateClock();
-
 function upLate() {
   var today = new Date();
   var hour = today.getHours();
@@ -49,5 +46,9 @@ function upLate() {
   }
 }
 
-upLate();
+document.addEventListener("DOMContentLoaded", () => {
+  setInterval(updateClock, 1000);
+  updateClock();
+  upLate();
+});
 
