@@ -1,7 +1,11 @@
+const joinMessage = [
+
+]
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('form').addEventListener("submit", function(e) {
     console.log("script is running");
-    
+
     e.preventDefault();
 
     const selected = document.querySelector('input[name="experienceLevel"]:checked');
