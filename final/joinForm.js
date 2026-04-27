@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (selected.value === "Dean") {
       form.innerHTML = `<p>Hello, Dean, have you seen this yet?</p>`
-      document.getElementsByClassName("banner").innerHTML = `
+      document.querySelector(".banner").innerHTML = `
         <iframe 
           width="560" 
           height="315" 
