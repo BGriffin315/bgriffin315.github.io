@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
 
     if (selected.value === "Dean") {
-      form.innerHTML = `<p>Hello, Dean, have you seen this yet?</p>`
+      form.innerHTML = `
+        <p>
+          Hello, Dean, have you seen this yet?
+          <a href="/final/connect/join.html">Back</a>
+        </p>
+      `
       document.querySelector(".banner").innerHTML = `
         <iframe 
           src="https://www.youtube.com/embed/b0IWVeqvQGk"
@@ -19,7 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
         </iframe>
       `;
     } else {
-      form.innerHTML = "<p>You can join!</p>";
+      form.innerHTML = `
+        <p>
+          You can join!<br>
+          <a href="/final/connect/join.html">Back</a>
+        </p>
+      `;
       document.querySelector(".banner").innerHTML = `<img src="/final/images/groupWorkingTogether.avif" alt="Group collaborating">`
     }
   })
