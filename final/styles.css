@@ -258,6 +258,10 @@ footer {
   body {
     font-size: 14px;
   }
+
+  footer {
+    background-color: #1f5f41;
+  }
 }
 
 /* Tablet Compatibility */
@@ -265,7 +269,7 @@ footer {
 @media (min-width: 481px) and (max-width: 768px) {
 
   body > header {
-  background-color: #f5ba6c;
+    background-color: #f5ba6c;
   }
   
   .firstGrid {
@@ -294,7 +298,7 @@ footer {
   }
 
   footer {
-  background-color: #f5ba6c;
+    background-color: #f5ba6c;
   }
 }
 
