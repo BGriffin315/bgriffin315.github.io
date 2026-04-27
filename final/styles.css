@@ -104,12 +104,12 @@ img {
 
 .banner img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .banner iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .grid {
