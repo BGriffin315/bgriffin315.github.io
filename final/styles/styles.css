@@ -105,6 +105,17 @@ img {
   height: 100%;
 }
 
+.banner ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  background: #f5f7fa;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
 .banner iframe {
   width: 100%;
   height: 100%;
