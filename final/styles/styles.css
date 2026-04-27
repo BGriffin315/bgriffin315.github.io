@@ -109,7 +109,7 @@ img {
   height: 100%;
 }
 
-.banner h3 p {
+.banner h3, p {
   text-align: center;
 }
 
