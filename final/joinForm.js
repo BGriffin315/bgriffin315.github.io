@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     } else {
       form.innerHTML = "<p>You can join!</p>";
+      document.querySelector(".banner").innerHTML = `<img src="groupWorkingTogether.avif" alt="Group collaborating">`
     }
   })
 });
