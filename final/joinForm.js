@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
 
     if (selected.value === "Dean") {
-      form.innerHTML = `
-        <p>Hello, Dean, have you seen this yet?</p>
+      form.innerHTML = `<p>Hello, Dean, have you seen this yet?</p>`
+      document.getElementsByClassName("banner").innerHTML = `
         <iframe 
           width="560" 
           height="315" 
-          src="https://www.youtube.com/watch?v=b0IWVeqvQGk"
+          src="https://www.youtube.com/embed/b0IWVeqvQGk"
           title="FFXIV Evercold Teaser Trailer"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
