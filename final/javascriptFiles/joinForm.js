@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selected.value === "Dean") {
       form.innerHTML = `
         <p>
-          Hello, Dean, have you seen this yet?
+          Hello, Dean, have you seen this yet?<br>
           <a href="/final/connect/join.html">Back</a>
         </p>
       `
