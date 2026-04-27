@@ -99,6 +99,7 @@ img {
 
 .banner {
   grid-area: banner;
+  aspect-ratio: 16 / 9;
 }
 
 .banner img {
