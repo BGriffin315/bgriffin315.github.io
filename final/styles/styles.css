@@ -90,59 +90,57 @@ img {
   border: 1px solid #ccc;
 }
 
-.completedProject {
+.tableGrid {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  padding: 40px 0;
 }
 
-.completedProject table {
+.completedProjects {
   border-collapse: collapse;
-  width: 80%;
-  max-width: 800px;
-  background: #1e1e2f;
-  color: #f5f5f5;
-  border-radius: 10px;
+  width: 75%;
+  max-width: 750px;
+  background: #d3d3d3; /* matches your page panel */
+  border: 1px solid #a0a0a0;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.completedProject caption {
-  caption-side: top;
-  font-size: 1.8rem;
+.completedProjects caption {
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 15px;
-  color: #00d4ff;
-  letter-spacing: 1px;
-}
-
-.completedProject th {
-  background: #2c2c3e;
   padding: 12px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  border-bottom: 2px solid #00d4ff;
+  color: #2c4a73; 
 }
 
-.completedProject td {
-  padding: 12px;
-  border-bottom: 1px solid #3a3a50;
+.completedProjects th {
+  background: #1f3a5f; 
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #2c4a73;
 }
 
-.completedProject tr:nth-child(even) {
-  background: #252538;
+.completedProjects td {
+  padding: 10px;
+  border-bottom: 1px solid #b5b5b5;
 }
 
-.completedProject tr:hover {
-  background: #32324a;
-  transition: 0.2s ease-in-out;
+.completedProjects tr:nth-child(even) {
+  background: #c9c9c9;
 }
 
-.completedProject td:first-child {
+.completedProjects tr:hover {
+  background: #bcbcbc;
+  transition: 0.2s ease;
+}
+
+.completedProjects td:first-child {
   font-weight: bold;
-  color: #00d4ff;
+  color: #1f3a5f;
+  width: 35%;
 }
 
 .descriptiveText {
