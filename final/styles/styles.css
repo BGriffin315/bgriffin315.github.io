@@ -90,6 +90,61 @@ img {
   border: 1px solid #ccc;
 }
 
+.completedProject {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.completedProject table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background: #1e1e2f;
+  color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.completedProject caption {
+  caption-side: top;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px;
+  color: #00d4ff;
+  letter-spacing: 1px;
+}
+
+.completedProject th {
+  background: #2c2c3e;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #00d4ff;
+}
+
+.completedProject td {
+  padding: 12px;
+  border-bottom: 1px solid #3a3a50;
+}
+
+.completedProject tr:nth-child(even) {
+  background: #252538;
+}
+
+.completedProject tr:hover {
+  background: #32324a;
+  transition: 0.2s ease-in-out;
+}
+
+.completedProject td:first-child {
+  font-weight: bold;
+  color: #00d4ff;
+}
+
 .descriptiveText {
   grid-area: descriptive;
   justify-content: center;
