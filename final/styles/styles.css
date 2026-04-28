@@ -319,13 +319,17 @@ footer {
       "banner";
   }
 
+  .completedProjects caption {
+    color: #1f5f41; 
+  }
+
   .completedProjects th {
-    background: #1f3a5f; 
-    border-bottom: 2px solid #2c4a73;
+    background: #1f5f41; 
+    border-bottom: 2px solid #1f5f41;
   }
 
   .completedProjects td:first-child {
-    color: #1f3a5f;
+    color: #1f5f41;
   }
 
   .grid {
@@ -378,6 +382,10 @@ footer {
   background-color: #f5ba6c;
   }
 
+  .completedProjects caption {
+    color: #f5ba6c; 
+  }
+
   .completedProjects th {
     background: #f5ba6c; 
     border-bottom: 2px solid #f5ba6c;
@@ -420,6 +428,10 @@ footer {
     grid-template-columns: 1fr 2fr;
     gap: 40px; /* more breathing room */
     padding: 20px;
+  }
+
+  .completedProjects caption {
+    color: #632424; 
   }
 
   .completedProjects th {
