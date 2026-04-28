@@ -41,21 +41,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const fillerDate = document.querySelector("#fillerDate1");
   const fillerDate2 = document.querySelector("#fillerDate2");
   const fillerDate3 = document.querySelector("#fillerDate3");
-  const fillerText = document.querySelector("#fillerText");
+  const fillerText1 = document.querySelector("#fillerText1");
   const fillerText2 = document.querySelector("#fillerText2");
   const fillerText3 = document.querySelector("#fillerText3");
 
   const random = Math.floor(Math.random() * dateText1.length);
   const random = Math.floor(Math.random() * dateText2.length);
   const random = Math.floor(Math.random() * dateText3.length);
-  const random = Math.floor(Math.random() * fillerText.length);
+  const random = Math.floor(Math.random() * fillerText1.length);
   const random = Math.floor(Math.random() * fillerText2.length);
   const random = Math.floor(Math.random() * fillerText3.length);
 
   fillerDate.innerHTML = `${dateText1[random]}`;
   fillerDate2.innerHTML = `${dateText2[random]}`;
   fillerDate3.innerHTML = `${dateText3[random]}`;
-  fillerText.innerHTML = `${fillerText[random]}`;
+  fillerText1.innerHTML = `${fillerText1[random]}`;
   fillerText2.innerHTML = `${fillerText2[random]}`;
   fillerText3.innerHTML = `${fillerText3[random]}`;
 });
