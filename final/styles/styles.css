@@ -273,10 +273,6 @@ form button{
 }
 
 footer {
-  background-color: #1f5f41;
-}
-
-footer {
   background-color: #1f3a5f;
   color: white;
   text-align: center;
@@ -321,6 +317,15 @@ footer {
     grid-template-areas:
       "descriptive"
       "banner";
+  }
+
+  .completedProjects th {
+    background: #1f3a5f; 
+    border-bottom: 2px solid #2c4a73;
+  }
+
+  .completedProjects td:first-child {
+    color: #1f3a5f;
   }
 
   .grid {
@@ -373,6 +378,15 @@ footer {
   background-color: #f5ba6c;
   }
 
+  .completedProjects th {
+    background: #f5ba6c; 
+    border-bottom: 2px solid #f5ba6c;
+  }
+
+  .completedProjects td:first-child {
+    color: #f5ba6c;
+  }
+
   footer {
     background-color: #f5ba6c;
   }
@@ -406,6 +420,15 @@ footer {
     grid-template-columns: 1fr 2fr;
     gap: 40px; /* more breathing room */
     padding: 20px;
+  }
+
+  .completedProjects th {
+    background: #572020; 
+    border-bottom: 2px solid #632424;
+  }
+
+  .completedProjects td:first-child {
+    color: #572020;
   }
 
   .grid {
