@@ -41,7 +41,7 @@ function upLate() {
 
   if (hour > 16) {
   document.getElementById("upLate").innerHTML = `Working late huh?`;
-  } else if (hour > 12 && hour < 16) {
+  } else if (hour > 12 && hour <= 16) {
     document.getElementById("upLate").innerHTML = `Good Afternoon!`;
   } else {
     document.getElementById("upLate").innerHTML = `Good Morning!`;
